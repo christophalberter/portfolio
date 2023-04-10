@@ -1,9 +1,7 @@
-
-
 export default () => {
     return (
         <>
-          <h1>Void</h1>
+            <h1>Home</h1>
         </>
     )
 }
