@@ -435,6 +435,16 @@ video {
   display: none;
 }
 
+body {
+  font-family: Raleway;
+}
+
+li {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -543,6 +553,11 @@ video {
   position: absolute;
 }
 
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -557,6 +572,10 @@ video {
 
 .z-10 {
   z-index: 10;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .ml-\[-100px\] {
@@ -654,6 +673,17 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.content-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+.content-div:hover {
+  background-image: linear-gradient(to right, rgba(112, 157, 255, 0.8), hsla(242, 74%, 61%, 0.8)) !important;
 }
 
 .hover\:ml-\[-10px\]:hover {

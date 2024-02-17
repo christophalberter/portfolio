@@ -4,11 +4,13 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
 import { RouteAboutMe, RouteContact, RouteHome, RouteProjects } from '../../routes/RouterRoutes';
+import { useNavigate } from 'react-router-dom';
 const logosExample = './../../assets/logosExample.png';
 
 export default () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  const navigate = useNavigate();
 
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
@@ -19,7 +21,7 @@ export default () => {
       {/* menu */}
       <ul className="hidden md:flex">
         <li>
-          <Link to={RouteHome} smooth={true} duration={500}>
+          <Link onClick={() => navigate(RouteHome)} to={RouteHome} smooth={true} duration={500}>
             Home
           </Link>
         </li>
