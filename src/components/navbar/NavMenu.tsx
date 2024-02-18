@@ -3,50 +3,48 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin, FaFacebook, FaLinkedinIn } from 
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
-import { RouteAboutMe, RouteContact, RouteHome, RouteProjects } from '../../routes/RouterRoutes';
-import { useNavigate } from 'react-router-dom';
 const logosExample = './../../assets/logosExample.png';
 
-export default () => {
-  const [nav, setNav] = useState(false);
-  const handleClick = () => setNav(!nav);
-  const navigate = useNavigate();
-
+const Menu = () => {
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
-      <div>
-        <img src={logosExample} alt="Logo Image" style={{ width: '200px' }} />
-      </div>
-
-      {/* menu */}
+    <>
       <ul className="hidden md:flex">
         <li>
-          <Link onClick={() => navigate(RouteHome)} to={RouteHome} smooth={true} duration={500}>
+          <Link to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
         <li>
-          <Link to={RouteAboutMe} smooth={true} duration={500}>
+          <Link to={'about'} smooth={true} duration={500}>
             About
           </Link>
         </li>
         <li>
-          <Link to={RouteProjects} smooth={true} duration={500}>
+          <Link to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
         <li>
-          <Link to={RouteProjects} smooth={true} duration={500}>
+          <Link to="work" smooth={true} duration={500}>
             Work
           </Link>
         </li>
         <li>
-          <Link to={RouteContact} smooth={true} duration={500}>
+          <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>
         </li>
       </ul>
+    </>
+  );
+};
 
+const MobileMenu = () => {
+  const [nav, setNav] = useState(false);
+  const handleClick = () => setNav(!nav);
+
+  return (
+    <>
       {/* Hamburger */}
       <div onClick={handleClick} className="md:hidden z-10">
         {!nav ? <FaBars /> : <FaTimes />}
@@ -61,37 +59,42 @@ export default () => {
         }
       >
         <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to={RouteHome} smooth={true} duration={500}>
+          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
         <li className="py-6 text-4xl">
           {' '}
-          <Link onClick={handleClick} to={RouteAboutMe} smooth={true} duration={500}>
+          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
         <li className="py-6 text-4xl">
           {' '}
-          <Link onClick={handleClick} to={RouteProjects} smooth={true} duration={500}>
+          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
         <li className="py-6 text-4xl">
           {' '}
-          <Link onClick={handleClick} to={RouteProjects} smooth={true} duration={500}>
+          <Link onClick={handleClick} to="work" smooth={true} duration={500}>
             Work
           </Link>
         </li>
         <li className="py-6 text-4xl">
           {' '}
-          <Link onClick={handleClick} to={RouteContact} smooth={true} duration={500}>
+          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
             Contact
           </Link>
         </li>
       </ul>
+    </>
+  );
+};
 
-      {/* Social icons */}
+const SocialIcons = () => {
+  return (
+    <>
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
@@ -116,6 +119,19 @@ export default () => {
           </li>
         </ul>
       </div>
+    </>
+  );
+};
+export default () => {
+  return (
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+      <div>
+        <img src={logosExample} alt="Logo Image" style={{ width: '200px' }} />
+      </div>
+
+      <Menu />
+      <MobileMenu />
+      <SocialIcons />
     </div>
   );
 };
