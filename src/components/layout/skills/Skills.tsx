@@ -6,7 +6,6 @@ const JavaScript = '../../../assets/javascript.png';
 const typescript = '../../../assets/typescript.png';
 const ReactImg = '../../../assets/react.png';
 const Node = '../../../assets/node.png';
-const FireBase = '../../../assets/firebase.png';
 const GitHub = '../../../assets/github.png';
 const Tailwind = '../../../assets/tailwind.png';
 const Mongo = '../../../assets/mongo.png';
