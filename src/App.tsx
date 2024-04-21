@@ -5,13 +5,13 @@ import { Contact } from './components/layout/contact/Contact';
 import { Home } from './components/layout/home/Home';
 import { Projects } from './components/layout/projects/Projects';
 import { Skills } from './components/layout/skills/Skills';
-import NavMenu from './components/navbar/NavMenu';
+import { NavBar } from './components/navbar/NavBar';
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <NavMenu />
+        <NavBar />
         <Home />
         <AboutMe />
         <Skills />
