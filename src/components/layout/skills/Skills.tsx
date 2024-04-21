@@ -1,19 +1,20 @@
 import React from 'react';
 
-// const HTML = '../../../assets/html.png';
-// const CSS = '../../../assets/css.png';
-// const JavaScript = '../../../assets/javascript.png';
-// const typescript = '../../../assets/typescript.png';
-// const ReactImg = '../../../assets/react.png';
-// const Node = '../../../assets/node.png';
-// const GitHub = '../../../assets/github.png';
-// const Tailwind = '../../../assets/tailwind.png';
-// const Mongo = '../../../assets/mongo.png';
+const HTML = '../../../assets/html.png';
+const CSS = '../../../assets/css.png';
+const JavaScript = '../../../assets/javascript.png';
+const typescript = '../../../assets/typescript.png';
+const ReactImg = '../../../assets/react.png';
+const Node = '../../../assets/node.png';
+const GitHub = '../../../assets/github.png';
+const Tailwind = '../../../assets/tailwind.png';
+const Mongo = '../../../assets/mongo.png';
+const nextJS = '../../../assets/nextjs.png';
 
 export const Skills = () => {
   return (
     <div id="skills" className="w-full h-screen bg-[#0a192f] text-gray-300">
-      {/* Container
+      Container
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
           <p className="text-4xl font-bold inline border-b-4 border-pink-600  pt-10">Skills</p>
@@ -42,6 +43,10 @@ export const Skills = () => {
             <p className="my-4">REACT</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+            <img className="w-20 mx-auto" src={nextJS} alt="HTML icon" />
+            <p className="my-4">NEXT JS</p>
+          </div>
+          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={GitHub} alt="HTML icon" />
             <p className="my-4">GITHUB</p>
           </div>
@@ -57,8 +62,8 @@ export const Skills = () => {
             <img className="w-20 mx-auto" src={Tailwind} alt="HTML icon" />
             <p className="my-4">TAILWIND</p>
           </div>
-        </div> */}
-      {/* </div> */}
+        </div>
+      </div>
     </div>
   );
 };
