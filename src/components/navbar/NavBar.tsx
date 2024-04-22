@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-scroll';
+import { personalGitHub, personalLinkedIn } from '../../constants/navigation';
 
 const Menu = () => {
   return (
@@ -93,10 +94,10 @@ export const NavBar = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       <div className="flex flex-row ">
-        <a href="https://www.linkedin.com/in/mauro-silva18" target="_blank" rel="noreferrer">
+        <a href={personalLinkedIn} target="_blank" rel="noreferrer">
           <FaLinkedin size={25} style={{ marginRight: '15px' }} />
         </a>
-        <a href="https://github.com/MauroSilva17" target="_blank" rel="noreferrer">
+        <a href={personalGitHub} target="_blank" rel="noreferrer">
           <FaGithub size={25} />
         </a>
       </div>
