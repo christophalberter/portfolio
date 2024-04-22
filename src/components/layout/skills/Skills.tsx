@@ -1,8 +1,3 @@
-import React from 'react';
-
-const HTML = '../../../assets/html.png';
-const CSS = '../../../assets/css.png';
-const JavaScript = '../../../assets/javascript.png';
 const typescript = '../../../assets/typescript.png';
 const ReactImg = '../../../assets/react.png';
 const Node = '../../../assets/node.png';
@@ -26,18 +21,7 @@ export const Skills = () => {
             <img className="w-20 mx-auto" src={typescript} alt="HTML icon" />
             <p className="my-4">TYPESCRIPT</p>
           </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={HTML} alt="HTML icon" />
-            <p className="my-4">HTML</p>
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={CSS} alt="HTML icon" />
-            <p className="my-4">CSS</p>
-          </div>
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={JavaScript} alt="HTML icon" />
-            <p className="my-4">JAVASCRIPT</p>
-          </div>
+
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={ReactImg} alt="HTML icon" />
             <p className="my-4">REACT</p>
@@ -47,8 +31,8 @@ export const Skills = () => {
             <p className="my-4">NEXT JS</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={GitHub} alt="HTML icon" />
-            <p className="my-4">GITHUB</p>
+            <img className="w-20 mx-auto" src={Tailwind} alt="HTML icon" />
+            <p className="my-4">TAILWIND</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img className="w-20 mx-auto" src={Node} alt="HTML icon" />
@@ -59,8 +43,8 @@ export const Skills = () => {
             <p className="my-4">MONGO DB</p>
           </div>
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <img className="w-20 mx-auto" src={Tailwind} alt="HTML icon" />
-            <p className="my-4">TAILWIND</p>
+            <img className="w-20 mx-auto" src={GitHub} alt="HTML icon" />
+            <p className="my-4">GIT</p>
           </div>
         </div>
       </div>
