@@ -8,27 +8,27 @@ const Menu = () => {
     <>
       <ul className="hidden md:flex">
         <li>
-          <Link to="home" smooth={true} duration={500}>
+          <Link to="home" smooth={true} duration={500} className='hover:text-accent transition duration-300'>
             Home
           </Link>
         </li>
         <li>
-          <Link to={'about'} smooth={true} duration={500}>
+          <Link to={'about'} smooth={true} duration={500} className='hover:text-accent transition duration-300'>
             About
           </Link>
         </li>
         <li>
-          <Link to="skills" smooth={true} duration={500}>
+          <Link to="skills" smooth={true} duration={500} className='hover:text-accent transition duration-300'>
             Skills
           </Link>
         </li>
         <li>
-          <Link to="work" smooth={true} duration={500}>
+          <Link to="work" smooth={true} duration={500} className='hover:text-accent transition duration-300'>
             Projects
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} duration={500}>
+          <Link to="contact" smooth={true} duration={500} className='hover:text-accent transition duration-300'>
             Contact
           </Link>
         </li>
