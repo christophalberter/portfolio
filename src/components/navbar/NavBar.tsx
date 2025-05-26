@@ -94,10 +94,10 @@ export const NavBar = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       <div className="flex flex-row ">
-        <a href={personalLinkedIn} target="_blank" rel="noreferrer">
+        <a href={personalLinkedIn} target="_blank" rel="noreferrer" className='hover:text-accent transition duration-300'>
           <FaLinkedin size={25} style={{ marginRight: '15px' }} />
         </a>
-        <a href={personalGitHub} target="_blank" rel="noreferrer">
+        <a href={personalGitHub} target="_blank" rel="noreferrer" className='hover:text-accent transition duration-300'>
           <FaGithub size={25} />
         </a>
       </div>
