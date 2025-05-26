@@ -27,7 +27,7 @@ export const Projects = () => {
               flex justify-center text-center items-center mx-auto content-div w-1/2 h-20"
             >
               {/* Hover effect for images */}
-              <a href="https://github.com/migueljpi/compawtible">
+              <a href="https://www.compawtible.me">
                 <div className="opacity-0 group-hover:opacity-100 ">
                   <span className="text-2xl font bold text-white tracking-wider ">{item.name}</span>
                   <p>{item.description}</p>
