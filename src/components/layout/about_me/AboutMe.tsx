@@ -13,17 +13,18 @@ export const AboutMe = () => {
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
           <div className="sm:text-right text-2xl font-bold ">
             <p>
-              Hi. I&apos;m Mauro Silva,
+              Hi. I&apos;m Christoph,
               <br /> nice to meet you.{' '}
             </p>
           </div>
           <div>
             <p className="tracking-wider">
-              👋 Hello there! I&apos;m a tech enthusiast and lifelong learner with a passion for web development.
-              I&apos;ve embarked on a unique journey, balancing truck driving with my love for technology. During my
-              off-hours, I immerse myself in the world of web development. We can say that I&apos;ve been on the road of
-              web development for more than 2 years now, and while there have been some obstacles along the way,
-              I&apos;ve managed to overcome and grow with them. 🚀
+              👋 I’m an engineer with 5+ years of experience in technical sales and management consulting.
+              I spent two years in Singapore’s semiconductor industry building client relationships and driving growth,
+              followed by 3 years in Germany focusing on digitalization, project, and supply chain management.
+              Recently, I completed a fullstack bootcamp at Le Wagon to sharpen my software development skills.
+              I’m now seeking opportunities in Singapore to combine my engineering, consulting, and coding expertise
+              in innovative teams.
             </p>
           </div>
         </div>
